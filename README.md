@@ -1,2 +1,3 @@
-# Assignment-21-Countries-List-Using-Jquery-javascript
-I will create one dropdown include all countries names and after apply jquery for best experiance..
+#This is Assignment 21..
+I have to cerate a dropdown button ..
+if user click on dropdown the content will hide ...
