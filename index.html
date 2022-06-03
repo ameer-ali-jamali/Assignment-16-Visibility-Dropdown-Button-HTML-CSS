@@ -16,7 +16,7 @@
         <div class="dropdown ">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select Any Type
+                Hide Any Box
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a onclick="drpdn_btn_1()" id="drpdn-btn-item1" class="dropdown-item" href="#">Hide Red Box</a>
@@ -47,12 +47,13 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script>
+
         function drpdn_btn_1() {
             let drpdown_item_1 = document.getElementById("drpdn-btn-item1").innerHTML;
             if (drpdown_item_1) {
                 document.getElementById("item-1").style.visibility = "hidden";
             }
-
+           
         }
 
         function drpdn_btn_2() {
