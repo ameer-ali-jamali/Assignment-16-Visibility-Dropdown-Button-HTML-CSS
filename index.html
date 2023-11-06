@@ -1,77 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Home</title>
+    </head>
 
-</head>
-
-<body>
-    <div class="container mt-3">
-        <div class="dropdown ">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Hide Any Box
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a onclick="drpdn_btn_1()" id="drpdn-btn-item1" class="dropdown-item" href="#">Hide Red Box</a>
-                <a onclick="drpdn_btn_2()" id="drpdn-btn-item2" class="dropdown-item" href="#">Hide Blue Box</a>
-                <a onclick="drpdn_btn_3()" id="drpdn-btn-item3" class="dropdown-item" href="#">Hide Green Box</a>
+    <body>
+        <div class="container mt-3">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hide Any Box
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a onclick="hideBox('item-1')" class="dropdown-item" href="#">Hide Red Box</a>
+                    <a onclick="hideBox('item-2')" class="dropdown-item" href="#">Hide Blue Box</a>
+                    <a onclick="hideBox('item-3')" class="dropdown-item" href="#">Hide Green Box</a>
+                </div>
             </div>
         </div>
-    </div>
-    <br><br>
+        <br><br>
 
-    <div class="conainer mt-5 ">
-        <div class="row w-50">
-            <div id="item-1" class="col-4 bg-danger">&nbsp;</div>
-            <div id="item-2" class="col-4 bg-primary">&nbsp;</div>
-            <div id="item-3" class="col-4 bg-success">&nbsp;</div>
+        <div class="container mt-5">
+            <div class="row w-50">
+                <div id="item-1" class="col-4 box red">&nbsp;</div>
+                <div id="item-2" class="col-4 box blue">&nbsp;</div>
+                <div id="item-3" class="col-4 box green">&nbsp;</div>
+            </div>
         </div>
-    </div>
 
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script>
-
-        function drpdn_btn_1() {
-            let drpdown_item_1 = document.getElementById("drpdn-btn-item1").innerHTML;
-            if (drpdown_item_1) {
-                document.getElementById("item-1").style.visibility = "hidden";
-            }
-           
-        }
-
-        function drpdn_btn_2() {
-            let drpdown_item_2 = document.getElementById("drpdn-btn-item2").innerHTML;
-            if (drpdown_item_2) {
-                document.getElementById("item-2").style.visibility = "hidden";
-            }
-        }
-
-        function drpdn_btn_3() {
-            let drpdown_item_3 = document.getElementById("drpdn-btn-item3").innerHTML;
-            if (drpdown_item_3) {
-                document.getElementById("item-3").style.visibility = "hidden";
-            }
-        }
-
-
-    </script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
 
 </html>
